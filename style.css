@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+   --primary-green :  hsl(163, 72%, 41%);
+   --primary-red : hsl(356, 69%, 56%);
+   --facebook : hsl(208, 92%, 53%);
+   --twitter : hsl(203, 89%, 53%);
+   --instagram : linear gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+   --youtube : hsl(348, 97%, 39%);
+   --primary-dark-theme : linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
+   --primary-light-theme : hsl(230, 22%, 74%);
+   --neutral-dark-blue-bg : hsl(230, 17%, 14%);
+    --neutral-dark-blue-top-bg : hsl(232, 19%, 15%);
+    --neutral-desat-blue-card-bg : hsl(228, 28%, 20%);
+    --text-color : hsl(0, 0%, 100%);
+    --light-theme-white-bg : hsl(0, 0%, 100%);
+    --light-theme-pale-blue-top-bg : hsl(225, 100%, 98%);
+    --light-theme-gray-blue-card-bg : hsl(227, 47%, 96%);
+    --light-theme-text-color : hsl(228, 12%, 44%);
+    --light-theme-text-color-2 : hsl(230, 17%, 14%);
+    --font-size : 1rem;
+
+
+}
+body {
+    width : 100%;
+    height: 100%;
+    font-size: var(--font-size);
+    font-family: 'Inter', sans-serif;
+    background-color: var(--neutral-dark-blue-bg);
+}
+.bg-color-light {
+    background-color: var(--light-theme-pale-blue-top-bg);
+}
+.header-light-color {
+    color: var(--neutral-dark-blue-bg) !important;
+}
+.cards-light {
+    background-color: var(--light-theme-gray-blue-card-bg) !important;
+}
+.num-light {
+    color: var(--light-theme-text-color-2) !important;
+}
+.day-content-light {
+    color: var(--light-theme-text-color) !important;
+}
+.wrapper {
+    width: 100%;
+    max-width: 1100px;
+    padding: 1.2rem;
+    margin: 0 auto;
+}
+
+.social-media-section {
+   display: block;
+}
+.social-media-header-box {
+    border-bottom : 1px solid var(--light-theme-text-color);
+    padding-block: 1.2rem;
+}
+.social-media-header-box h1 {
+    color: var(--text-color);
+}
+.social-media-header-box p {
+    color: var(--light-theme-text-color);
+    font-weight: 700;
+}
+.dark-mode-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+.dark-mode-box p {
+    color: var(--light-theme-text-color);
+    font-weight: 700;
+}
+.switch {
+    position: relative;
+    cursor: pointer;
+}
+.button-box {
+    background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+    width: 50px;
+    height: 20px;
+    border-radius: 2rem;
+}
+.circle {
+    border-radius: 50%;
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    top: 2px;
+    right: 30px;
+    background-color: var(--neutral-dark-blue-bg);
+    transition: .2s ease-in-out;
+}
+.social-media-boxes {
+    display: grid;
+    grid-gap: 28px;
+    grid-template-columns: 1fr;
+    margin-top: 2rem;
+}
+.media-box {
+    /* border: 1px solid white; */
+    text-align: center;
+    height: 260px;
+    width: 100%;
+    margin: 0 auto;
+    /* margin-top: 3rem; */
+    padding: 2rem;
+    background-color: var(--neutral-desat-blue-card-bg);
+    border-radius: .5rem;
+    border-top: 5px solid var(--facebook);
+}
+.facebook-section {
+    display: flex;
+    justify-content: center;
+
+}
+.nathan{
+    margin-left: .7rem;
+    color: var(--light-theme-text-color);
+    font-weight: 700;
+}
+.followers-box {
+    margin-block: 1rem;
+}
+.followers-num {
+    color: var(--text-color);
+    font-size: 3.5rem;
+    font-weight: 700;
+
+}
+.followers {
+    color: var(--light-theme-text-color);
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+.day-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.day-section p {
+    margin-left: 0.7rem;
+    color: var(--text-color);
+    font-weight: 700;
+}
+.border-top {
+    border-top: 5px solid hsl(329, 70%, 58%);
+}
+.day-youtube {
+    color: var(--primary-red) !important;
+}
+.border-top-youtube {
+    border-top: 5px solid var(--youtube);
+}
+.right {
+    right: 0;
+}
+.overview-section {
+    display: block;
+    margin-top: 2rem;
+}
+.overview-section h1 {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.overview-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 28px;
+}
+.overview-card {
+    width: 100%;
+    height: 130px;
+    background-color: var(--neutral-desat-blue-card-bg);
+    padding: 1.2rem;
+    line-height: 3rem;
+    
+}
+.page-views {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.page-views p {
+    color: var(--light-theme-text-color);
+    font-weight: 700;
+}
+
+.overview-num {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.overview-num h4 {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.percent {
+    display: flex;
+    align-items: center;
+}
+.percent p {
+    color: var(--primary-green);
+    font-weight: 700;
+    margin-left: .3rem;
+}
+.attribution {
+    color: var(--text-color);
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 11px;
+}
+.attribution a {
+    text-decoration: none;
+    color: hsl(228, 45%, 44%);
+}
+/* section for larger screen size----------- */
+@media only screen and (min-width : 50em){
+    .social-media-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .social-media-header-box {
+        border-bottom: none;
+    }
+    .switch {
+        margin-left: 1rem;
+    }
+    .social-media-boxes {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      
+    
+    }
+    .overview-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+/* larger screen-------------- */
+@media only screen and (min-width : 1100px){
+    .social-media-boxes {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .overview-cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+}
+/* for full desktop screen-------- */
+.social-media-boxes {
+    flex-wrap: nowrap;
+}
